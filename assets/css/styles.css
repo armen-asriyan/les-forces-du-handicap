@@ -120,7 +120,8 @@ header .nav-links {
 }
 
 /* Style du champ de recherche */
-#navbar .nav-search input {
+#navbar .nav-search input,
+#navbar .nav-search button {
   font-size: 1.3em;
   padding: 10px;
   box-sizing: border-box;
@@ -132,11 +133,10 @@ header .nav-links {
 }
 
 /* Style du bouton de recherche */
-#navbar .nav-search input[type="submit"] {
+#navbar .nav-search button[type="submit"] {
   background-color: #323eb6;
-  border: 0;
-  padding: 10px 20px;
-  box-sizing: border-box;
+  color: #fff;
+  padding: 10px 25px;
 }
 
 /* Configuration de la grille principale */
@@ -231,27 +231,27 @@ header .nav-links {
 
 /* Définition des images de fond pour chaque section */
 .main-grid .actualites {
-  background-image: url("./assets/img/article-1.webp");
+  background-image: url("/assets/img/article-1.webp");
 }
 
 .main-grid .dossier {
-  background-image: url("./assets/img/article-2.webp");
+  background-image: url("/assets/img/article-2.webp");
 }
 
 .main-grid .accompagnements {
-  background-image: url("./assets/img/article-3.webp");
+  background-image: url("/assets/img/article-3.webp");
 }
 
 .main-grid .demarches-adm {
-  background-image: url("./assets/img/article-4.webp");
+  background-image: url("/assets/img/article-4.webp");
 }
 
 .main-grid .vie-qtd {
-  background-image: url("./assets/img/article-5.webp");
+  background-image: url("/assets/img/article-5.webp");
 }
 
 .main-grid .partenaires {
-  background-image: url("./assets/img/article-6.webp");
+  background-image: url("/assets/img/article-6.webp");
 }
 
 /* Configuration des couleurs de fond et des bordures pour chaque type d'article */
