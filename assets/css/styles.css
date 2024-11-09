@@ -138,6 +138,7 @@ header .nav-links {
   background-color: #323eb6;
   color: #fff;
   padding: 10px 25px;
+  box-sizing: border-box;
 }
 
 /* Configuration de la grille principale */
