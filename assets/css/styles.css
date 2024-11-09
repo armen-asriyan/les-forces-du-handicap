@@ -26,7 +26,7 @@ a:hover {
 /* Configuration de l'en-tête */
 header {
   background-color: #520647;
-  padding: 30px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -115,14 +115,12 @@ header .nav-links {
 /* Configuration de la barre de recherche */
 #navbar .nav-search {
   display: flex;
-  align-items: flex-end;
   justify-content: flex-end;
   box-sizing: border-box;
 }
 
 /* Style du champ de recherche */
-#navbar .nav-search input,
-#navbar .nav-search button {
+#navbar .nav-search input {
   font-size: 1.3em;
   padding: 10px;
   box-sizing: border-box;
@@ -137,7 +135,7 @@ header .nav-links {
 #navbar .nav-search button[type="submit"] {
   background-color: #323eb6;
   color: #fff;
-  padding: 10px 25px;
+  padding: 15px 25px;
   box-sizing: border-box;
 }
 
@@ -226,7 +224,8 @@ header .nav-links {
 .main-grid .demarches-adm,
 .main-grid .vie-qtd,
 .main-grid .partenaires {
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
 }
@@ -253,6 +252,7 @@ header .nav-links {
 }
 
 .main-grid .partenaires {
+  background-size: contain;
   background-image: url("../img/article-6.webp");
 }
 
@@ -361,6 +361,7 @@ footer a {
   text-transform: uppercase;
   display: inline-flex;
   align-items: center;
+  gap: 5px;
 }
 
 /* Espacement des liens dans le pied de page */
@@ -378,7 +379,6 @@ footer a {
   font-size: 1em;
   border: 2px #454545 solid;
   border-radius: 50%;
-  margin-right: 10px;
 }
 
 /* Style de la section centrale du pied de page */
@@ -391,6 +391,7 @@ footer a {
 .site-map {
   display: flex;
   flex-direction: column;
+  min-width: 300px;
 }
 
 /* Style des liens dans le plan du site */
@@ -425,7 +426,6 @@ footer a {
   color: #6f2eb0;
 }
 
-/* Style de la dernière section du pied de page */
 .footer-end p {
   color: #454545;
   font-size: 1.1em;
@@ -433,28 +433,49 @@ footer a {
   text-align: center;
 }
 
-/* Media queries pour les appareils mobiles */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* Ajustements pour l'en-tête en version mobile */
+/* Configuration pour les petits appareils mobiles */
+
+@media screen and (max-width: 480px) {
   header {
+    padding: 15px;
     flex-direction: column;
-    padding: 20px;
+    gap: 20px;
   }
 
-  header .header-title {
-    font-size: 1.8em;
-    text-align: center;
+  header .logo-title-wrapper {
+    flex-direction: column;
+  }
+
+  header .header-logo {
+    margin: 0;
   }
 
   header .header-social-links {
-    margin-top: 10px;
+    align-self: center;
   }
 
   #navbar {
     align-items: center;
   }
 
-  /* Modification de la grille pour l'affichage mobile */
+  #navbar .nav-links {
+    margin-bottom: 15px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  #navbar .nav-search input,
+  #navbar .nav-search button {
+    font-size: 1.2em;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  #navbar .nav-search button[type="submit"] {
+    padding: 5px 20px;
+  }
+
   .main-grid {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -467,7 +488,6 @@ footer a {
     font-size: 1em;
   }
 
-  /* Ajustements du pied de page pour mobile */
   .footer-start,
   .footer-middle {
     flex-direction: column;
@@ -475,7 +495,10 @@ footer a {
   }
 
   .footer-start a {
+    width: 100%;
+    text-align: center;
     margin: 0;
+    font-size: 0.9em;
   }
 
   .footer-middle .site-map {
@@ -490,52 +513,53 @@ footer a {
   }
 }
 
-/* Media queries pour les tablettes */
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* Ajustements pour l'en-tête en version tablette */
+/* Configuration pour les tablettes en mode portrait et les grands téléphones */
+/* Ainsi que */
+/* Configuration pour les tablettes et ordinateurs portables */
+
+@media screen and (min-width: 481px) and (max-width: 768px),
+  screen and (min-width: 769px) and (max-width: 1024px) {
   header {
+    padding: 15px;
     flex-direction: column;
-    padding: 20px;
+    gap: 20px;
   }
 
-  header .header-title {
-    font-size: 1.8em;
-    text-align: center;
+  header .header-logo {
+    margin: 0;
   }
 
   header .header-social-links {
-    margin-top: 10px;
+    align-self: center;
   }
 
   #navbar {
     align-items: center;
   }
 
-  /* Modification de la grille pour l'affichage tablette */
   .main-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Ajustements du pied de page pour tablette */
-  .footer-start,
-  .footer-middle {
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+  .footer-start {
+    gap: 10px;
+  }
+
+  .footer-start h2 {
+    font-size: 1.5em;
   }
 
   .footer-start a {
-    margin: 0;
+    margin: 3px;
+  }
+
+  .footer-middle {
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
   .footer-middle .site-map {
     margin-bottom: 15px;
     text-align: center;
-  }
-
-  .footer-end p {
-    font-size: 1em;
-    text-align: center;
-    padding: 15px;
   }
 }
