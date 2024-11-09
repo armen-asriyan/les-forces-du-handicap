@@ -225,13 +225,14 @@ header .nav-links {
 .main-grid .vie-qtd,
 .main-grid .partenaires {
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   overflow: hidden;
 }
 
 /* Définition des images de fond pour chaque section */
 .main-grid .actualites {
+  background-size: 100% 70%;
   background-image: url("../img/article-1.webp");
 }
 
@@ -252,7 +253,8 @@ header .nav-links {
 }
 
 .main-grid .partenaires {
-  background-size: contain;
+  background-size: 80%;
+  background-position: center 30%;
   background-image: url("../img/article-6.webp");
 }
 
