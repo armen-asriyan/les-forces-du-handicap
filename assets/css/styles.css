@@ -1,0 +1,539 @@
+/* Réinitialisation des marges et configuration globale du site */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+  background-color: #cecece;
+  color: #fff;
+}
+
+/* Utilitaire pour transformer le texte en majuscules */
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* Animation de transition pour tous les liens */
+a {
+  transition: 0.3s;
+}
+
+/* Effet de transparence au survol des liens */
+a:hover {
+  opacity: 0.7;
+}
+
+/* Configuration de l'en-tête */
+header {
+  background-color: #520647;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Conteneur pour le logo et le titre */
+header .logo-title-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* Espacement du logo dans l'en-tête */
+header .header-logo {
+  margin-right: 5px;
+}
+
+/* Style du titre principal */
+header .header-title {
+  font-size: 2.5em;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+  width: fit-content;
+}
+
+/* Style du sous-titre dans l'en-tête */
+header .header-subtitle {
+  font-weight: 300;
+  padding: 3px;
+  background-color: #fff;
+  color: #520647;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Mise en évidence du texte dans le sous-titre */
+header .header-subtitle span {
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+/* Configuration des liens sociaux dans l'en-tête */
+header .header-social-links {
+  align-self: flex-end;
+}
+
+/* Style des icônes de réseaux sociaux */
+header .header-social-links a {
+  font-size: 2em;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  border: 3px #fff solid;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 5px;
+  width: 48px;
+}
+
+/* Configuration de la barre de navigation */
+header #navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style des liens de navigation */
+header #navbar a {
+  font-size: 1.3em;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 200;
+}
+
+/* Séparateur entre les liens de navigation */
+header #navbar a:not(:last-child)::after {
+  content: " |";
+}
+
+/* Espacement des liens de navigation */
+header .nav-links {
+  margin-bottom: 30px;
+}
+
+/* Configuration de la barre de recherche */
+#navbar .nav-search {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+/* Style du champ de recherche */
+#navbar .nav-search input {
+  font-size: 1.3em;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Style du placeholder dans le champ de recherche */
+#navbar .nav-search input::placeholder {
+  color: #323eb6;
+}
+
+/* Style du bouton de recherche */
+#navbar .nav-search input[type="submit"] {
+  background-color: #323eb6;
+  border: 0;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+/* Configuration de la grille principale */
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #fff;
+  gap: 4px;
+}
+
+/* Style des articles dans la grille */
+.main-grid article {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+/* Style des titres d'articles */
+.main-grid article h2 {
+  font-size: 2em;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 0.9;
+  margin: 0;
+}
+
+/* Style du texte des articles */
+.main-grid article p {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+/* Positionnement du contenu des articles */
+.main-grid .article-content {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+/* Configuration de l'alignement du texte pour chaque type d'article */
+.main-grid .actualites p {
+  text-align: left;
+}
+
+.main-grid .dossier p {
+  text-align: right;
+}
+
+.main-grid .accompagnements p {
+  text-align: right;
+}
+
+.main-grid .demarches-adm p {
+  text-align: right;
+}
+
+.main-grid .vie-qtd p {
+  text-align: right;
+}
+
+.main-grid .partenaires p {
+  text-align: left;
+}
+
+/* Création d'un fond incliné pour le contenu des articles */
+.main-grid .article-content::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  width: 100%;
+  height: 120%;
+  transform: skewY(3deg);
+  z-index: -1;
+  box-sizing: border-box;
+}
+
+/* Configuration des images de fond pour les articles */
+.main-grid .actualites,
+.main-grid .dossier,
+.main-grid .accompagnements,
+.main-grid .demarches-adm,
+.main-grid .vie-qtd,
+.main-grid .partenaires {
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* Définition des images de fond pour chaque section */
+.main-grid .actualites {
+  background-image: url("/assets/img/article-1.webp");
+}
+
+.main-grid .dossier {
+  background-image: url("/assets/img/article-2.webp");
+}
+
+.main-grid .accompagnements {
+  background-image: url("/assets/img/article-3.webp");
+}
+
+.main-grid .demarches-adm {
+  background-image: url("/assets/img/article-4.webp");
+}
+
+.main-grid .vie-qtd {
+  background-image: url("/assets/img/article-5.webp");
+}
+
+.main-grid .partenaires {
+  background-image: url("/assets/img/article-6.webp");
+}
+
+/* Configuration des couleurs de fond et des bordures pour chaque type d'article */
+.main-grid .actualites .article-content::before {
+  background-color: #bf4708;
+  border-top: 15px #d4672e solid;
+  transform: skewY(-3deg);
+}
+
+.main-grid .dossier .article-content::before {
+  background-color: #520647;
+  border-top: 15px #861776 solid;
+}
+
+.main-grid .accompagnements .article-content::before {
+  background-color: #397201;
+  border-top: 15px #6bb022 solid;
+  transform: skewY(-3deg);
+}
+
+.main-grid .demarches-adm .article-content::before {
+  background-color: #050f7e;
+  border-top: 15px #323eb6 solid;
+}
+
+.main-grid .vie-qtd .article-content::before {
+  background-color: #ac001a;
+  border-top: 15px #ce2741 solid;
+  transform: skewY(-5deg);
+}
+
+.main-grid .partenaires .article-content::before {
+  height: 200%;
+  background-color: #6f2eb0;
+  border-top: 15px #965dce solid;
+  transform: skewY(5deg);
+}
+
+/* Style des contrôles du carrousel */
+.carousel-controls {
+  text-align: right;
+}
+
+/* Style des flèches de navigation du carrousel */
+.carousel-controls a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 3em;
+  font-weight: 300;
+  letter-spacing: 20px;
+  line-height: 0;
+  display: inline-block;
+}
+
+/* Style des points de navigation du carrousel */
+.carousel-dots {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 0;
+  width: fit-content;
+  height: fit-content;
+  z-index: 3;
+}
+
+/* Style individuel des points du carrousel */
+.carousel-dots .dot {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: #9c9a9b;
+  background-clip: border-box;
+  border: 2em solid transparent;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+/* Couleurs des points actifs du carrousel selon la section */
+.main-grid .actualites .carousel-dots .dot--selected {
+  background-color: #bf4708;
+}
+
+.main-grid .partenaires .carousel-dots .dot--selected {
+  background-color: #6f2eb0;
+}
+
+/* Configuration du pied de page */
+footer a {
+  text-decoration: none;
+  color: #454545;
+  width: fit-content;
+}
+
+/* Style de la première section du pied de page */
+.footer-start {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+/* Style des titres dans le pied de page */
+.footer-start h2 {
+  font-size: 2em;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Espacement des liens dans le pied de page */
+.footer-start a {
+  margin: 20px;
+}
+
+/* Style des icônes circulaires dans le pied de page */
+.footer-start span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  font-size: 1em;
+  border: 2px #454545 solid;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Style de la section centrale du pied de page */
+.footer-middle {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Configuration du plan du site */
+.site-map {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style des liens dans le plan du site */
+.site-map a {
+  width: fit-content;
+  line-height: 1.7;
+  font-size: 1.3em;
+}
+
+/* Couleurs spécifiques pour chaque section dans le pied de page */
+.footer-middle .actualites {
+  color: #bf4708;
+}
+
+.footer-middle .dossier {
+  color: #520647;
+}
+
+.footer-middle .accompagnements {
+  color: #397201;
+}
+
+.footer-middle .demarches-adm {
+  color: #050f7e;
+}
+
+.footer-middle .vie-qtd {
+  color: #ac001a;
+}
+
+.footer-middle .partenaires {
+  color: #6f2eb0;
+}
+
+/* Style de la dernière section du pied de page */
+.footer-end p {
+  color: #454545;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Media queries pour les appareils mobiles */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Ajustements pour l'en-tête en version mobile */
+  header {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  header .header-title {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  header .header-social-links {
+    margin-top: 10px;
+  }
+
+  #navbar {
+    align-items: center;
+  }
+
+  /* Modification de la grille pour l'affichage mobile */
+  .main-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .main-grid article h2 {
+    font-size: 1.6em;
+  }
+
+  .main-grid article p {
+    font-size: 1em;
+  }
+
+  /* Ajustements du pied de page pour mobile */
+  .footer-start,
+  .footer-middle {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-start a {
+    margin: 0;
+  }
+
+  .footer-middle .site-map {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .footer-end p {
+    font-size: 1em;
+    text-align: center;
+    padding: 15px;
+  }
+}
+
+/* Media queries pour les tablettes */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Ajustements pour l'en-tête en version tablette */
+  header {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  header .header-title {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  header .header-social-links {
+    margin-top: 10px;
+  }
+
+  #navbar {
+    align-items: center;
+  }
+
+  /* Modification de la grille pour l'affichage tablette */
+  .main-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Ajustements du pied de page pour tablette */
+  .footer-start,
+  .footer-middle {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .footer-start a {
+    margin: 0;
+  }
+
+  .footer-middle .site-map {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .footer-end p {
+    font-size: 1em;
+    text-align: center;
+    padding: 15px;
+  }
+}

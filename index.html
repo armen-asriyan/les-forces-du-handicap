@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Balises meta de base pour l'encodage des caractères et l'affichage responsive -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CDN FontAwesome pour les icônes -->
+    <script src="https://kit.fontawesome.com/3d24ae3fdc.js" crossorigin="anonymous"></script>
+
+    <!-- Police Google Fonts - Poppins avec toutes les graisses et styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Feuille de style personnalisée -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <title>Les Forces du Handicap | FEGAPEI</title>
+</head>
+
+<body>
+    <!-- En-tête contenant le logo, le titre et la navigation -->
+    <header>
+        <!-- Conteneur du logo et du titre -->
+        <div class="logo-title-wrapper">
+            <div class="header-logo">
+                <img src="/assets/img/logo.png" alt="logo de Les Forces du Handicap" class="logo">
+            </div>
+
+            <!-- Titre et sous-titre du site -->
+            <div class="header-title-container">
+                <h1 class="header-title">Les Forces <strong>du Handicap</strong></h1>
+                <h2 class="header-subtitle">Le portail du handicap de la <span>FEGAPEI</span></h2>
+            </div>
+        </div>
+
+        <!-- Liens vers les réseaux sociaux -->
+        <div class="header-social-links">
+            <a href=""><i class="fa-solid fa-rss"></i></a>
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+
+        <!-- Barre de navigation avec liens d'accessibilité et recherche -->
+        <nav id="navbar">
+            <div class="nav-links">
+                <a href="#">Accéder au contenu</a>
+                <a href="#">Plan du site</a>
+                <a href="#">Accessibilité</a>
+            </div>
+
+            <!-- Formulaire de recherche -->
+            <form class="nav-search">
+                <input type="search" name="search" id="search-blank" placeholder="Rechercher...">
+                <input type="submit" value="🔍">
+            </form>
+        </nav>
+    </header>
+
+    <!-- Zone de contenu principal -->
+    <main>
+        <!-- Disposition en grille pour les sections de contenu principal -->
+        <div class="main-grid">
+            <!-- Article Actualités avec carrousel -->
+            <article class="actualites">
+                <!-- Points de navigation du carrousel -->
+                <div class="carousel-dots">
+                    <a href="#" class="dot dot--selected">Aller à la diapo 1</a>
+                    <a href="#" class="dot">Aller à la diapo 2</a>
+                    <a href="#" class="dot">Aller à la diapo 3</a>
+                </div>
+
+                <!-- Contenu de l'article avec contrôles du carrousel -->
+                <div class="article-content">
+                    <p>L'État et la CNAF aux côtés des communes pour favoriser (...)</p>
+
+                    <!-- Boutons de navigation du carrousel -->
+                    <div class="carousel-controls">
+                        <a href="" class="previous-button">&lt;</a>
+                        <a href="" class="next-button">&gt;</a>
+                    </div>
+
+                    <h2>Actualités</h2>
+                </div>
+            </article>
+
+            <!-- Section Dossier -->
+            <article class="dossier">
+                <div class="article-content">
+                    <p>L'Europe, une autre approche du handicap</p>
+                    <h2>Dossier</h2>
+                </div>
+            </article>
+
+            <!-- Section Accompagnements -->
+            <article class="accompagnements">
+                <div class="article-content">
+                    <p>Aide à domicile <span>(Handéo)</span> <br> Autres accompagnements</p>
+                    <h2>Accompagnements</h2>
+                </div>
+            </article>
+
+            <!-- Section Démarches Administratives -->
+            <article class="demarches-adm">
+                <div class="article-content">
+                    <p>Reconnaissance / Évaluation <br> Ressource financière</p>
+                    <h2>Démarches Administratives</h2>
+                </div>
+            </article>
+
+            <!-- Section Vie Quotidienne -->
+            <article class="vie-qtd">
+                <div class="article-content">
+                    <p>Aide aux aidants <br> (Association Française des Aidants) <br> Vie et handicap</p>
+                    <h2>Vie Quotidienne</h2>
+                </div>
+            </article>
+
+            <!-- Section Partenaires avec carrousel -->
+            <article class="partenaires">
+                <!-- Points de navigation du carrousel des partenaires -->
+                <div class="carousel-dots">
+                    <a href="#" class="dot dot--selected">Aller à la diapo 1</a>
+                    <a href="#" class="dot">Aller à la diapo 2</a>
+                    <a href="#" class="dot">Aller à la diapo 3</a>
+                </div>
+
+                <div class="article-content">
+                    <!-- Contrôles du carrousel des partenaires -->
+                    <div class="carousel-controls">
+                        <a href="" class="previous-button">&lt;</a>
+                        <a href="" class="next-button">&gt;</a>
+                    </div>
+
+                    <h2>Partenaires</h2>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <!-- Section supérieure du footer avec liens rapides -->
+        <div class="footer-start">
+            <a href="">
+                <h2><span><i class="fa-solid fa-book-open"></i></span>Abonnez-Vous</h2>
+            </a>
+            <a href="">
+                <h2><span><i class="fa-solid fa-globe"></i></span>La FEGAPEI</h2>
+            </a>
+            <a href="">
+                <h2><span><i class="fa-regular fa-envelope"></i></span>Contactez-Nous</h2>
+            </a>
+        </div>
+
+        <!-- Section centrale du footer avec plan du site -->
+        <div class="footer-middle">
+            <!-- Première colonne du plan du site -->
+            <div class="site-map column-1">
+                <a href="#" class="uppercase accueil">Accueil</a>
+                <a href="#" class="uppercase partenaires">Partenaires</a>
+                <a href="#" class="uppercase contact">Contact</a>
+                <a href="#" class="uppercase abonnement">Abonnement</a>
+                <a href="#">Suivez-nous sur Twitter</a>
+                <a href="#">Rejoignez-nous sur Facebook</a>
+            </div>
+
+            <!-- Deuxième colonne du plan du site -->
+            <div class="site-map column-2">
+                <a href="#" class="uppercase actualites">Actualités</a>
+                <a href="#" class="uppercase dossier">Dossier</a>
+                <a href="#">Nom du dossier</a>
+                <a href="#" class="uppercase accompagnements">Accompagnements</a>
+                <a href="#">Aida à domicile</a>
+                <a href="#">Autre accompagnements</a>
+            </div>
+
+            <!-- Troisième colonne du plan du site -->
+            <div class="site-map column-3">
+                <a href="#" class="uppercase demarches-adm">Démarches administratives</a>
+                <a href="#">Reconnaissance / Évaluation</a>
+                <a href="#">Ressources financière</a>
+                <a href="#" class="uppercase vie-qtd">Vie Quotidienne</a>
+                <a href="#">Aide aux aidants</a>
+                <a href="#">Vie et handicap</a>
+            </div>
+        </div>
+
+        <!-- Section inférieure du footer avec mentions légales -->
+        <div class="footer-end">
+            <p>© 2015 FEGAPEI - 14, rue de la Tombe-Issoire - 75014 Paris | <a href="#">Mentions légales</a> <br>
+                Réalisation: La
+                FEGAPEI</p>
+        </div>
+    </footer>
+</body>
+
+</html>
