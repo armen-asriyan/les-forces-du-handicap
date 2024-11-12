@@ -260,7 +260,8 @@ header .nav-links {
 
 /* Configuration des couleurs de fond et des bordures pour chaque type d'article */
 .main-grid .actualites .article-content::before {
-  background-color: #bf4708;
+  /* Couleur plus accessible sur #cecece de footer */
+  background-color: #a32f03;
   border-top: 15px #d4672e solid;
   transform: skewY(-3deg);
 }
@@ -271,7 +272,7 @@ header .nav-links {
 }
 
 .main-grid .accompagnements .article-content::before {
-  background-color: #397201;
+  background-color: #39630e;
   border-top: 15px #6bb022 solid;
   transform: skewY(-3deg);
 }
@@ -327,6 +328,7 @@ header .nav-links {
   width: 24px;
   height: 24px;
   background-color: #9c9a9b;
+  color: transparent;
   background-clip: border-box;
   border: 2em solid transparent;
   border-radius: 50%;
@@ -335,7 +337,7 @@ header .nav-links {
 
 /* Couleurs des points actifs du carrousel selon la section */
 .main-grid .actualites .carousel-dots .dot--selected {
-  background-color: #bf4708;
+  background-color: #a32f03;
 }
 
 .main-grid .partenaires .carousel-dots .dot--selected {
@@ -405,7 +407,7 @@ footer a {
 
 /* Couleurs spécifiques pour chaque section dans le pied de page */
 .footer-middle .actualites {
-  color: #bf4708;
+  color: #a32f03;
 }
 
 .footer-middle .dossier {
@@ -413,7 +415,7 @@ footer a {
 }
 
 .footer-middle .accompagnements {
-  color: #397201;
+  color: #39630e;
 }
 
 .footer-middle .demarches-adm {

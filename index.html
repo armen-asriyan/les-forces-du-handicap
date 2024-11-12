@@ -24,39 +24,42 @@
 
 <body>
     <!-- En-tête contenant le logo, le titre et la navigation -->
-    <header>
+    <header role="banner">
         <!-- Conteneur du logo et du titre -->
         <div class="logo-title-wrapper">
             <div class="header-logo">
-                <img src="assets/img/logo.png" alt="logo de Les Forces du Handicap" class="logo">
+                <img src="assets/img/logo.png" alt="logo de Les Forces du Handicap" class="logo"
+                    aria-label="Logo de `Les Forces du Handicap`">
             </div>
 
             <!-- Titre et sous-titre du site -->
-            <div class="header-title-container">
+            <div class="header-title-container" aria-label="Réseaux sociaux">
                 <h1 class="header-title">Les Forces <strong>du Handicap</strong></h1>
                 <h2 class="header-subtitle">Le portail du handicap de la <span>FEGAPEI</span></h2>
             </div>
         </div>
 
         <!-- Liens vers les réseaux sociaux -->
-        <div class="header-social-links">
-            <a href=""><i class="fa-solid fa-rss"></i></a>
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+        <div class="header-social-links" aria-labelledby="Liens vers les réseaux sociaux">
+            <a href="" aria-label="Bouton pour le Newsletter"><i class="fa-solid fa-rss"></i></a>
+            <a href="" aria-label="Bouton pour Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="" aria-label="Bouton pour X ou Twitter"><i class="fa-brands fa-x-twitter"></i></a>
         </div>
 
         <!-- Barre de navigation avec liens d'accessibilité et recherche -->
-        <nav id="navbar">
+        <nav id="navbar" aria-label="Menu principal">
             <div class="nav-links">
-                <a href="#">Accéder au contenu</a>
-                <a href="#">Plan du site</a>
-                <a href="#">Accessibilité</a>
+                <a href="#" aria-label="Aller au contenu principal">Accéder au contenu</a>
+                <a href="#" aria-label="Plan du site">Plan du site</a>
+                <a href="#" aria-label="Accessibilité">Accessibilité</a>
             </div>
 
             <!-- Formulaire de recherche -->
-            <form class="nav-search">
-                <input type="search" name="search" id="search-blank" placeholder="Rechercher...">
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <form class="nav-search" role="search" aria-label="Formulaire de recherche">
+                <input type="search" name="search" id="search-blank" placeholder="Rechercher..."
+                    aria-label="Votre texte à rechercher">
+                <button type="submit" aria-label="Bouton pour commencer le recherche"><i
+                        class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </nav>
     </header>
@@ -68,10 +71,10 @@
             <!-- Article Actualités avec carrousel -->
             <article class="actualites">
                 <!-- Points de navigation du carrousel -->
-                <div class="carousel-dots">
-                    <a href="#" class="dot dot--selected">Aller à la diapo 1</a>
-                    <a href="#" class="dot">Aller à la diapo 2</a>
-                    <a href="#" class="dot">Aller à la diapo 3</a>
+                <div class="carousel-dots" aria-label="Circles de la navigation du carrousel">
+                    <a href="#" class="dot dot--selected" aria-label="Aller à la diapo 1">Aller à la diapo 1</a>
+                    <a href="#" class="dot" aria-label="Aller à la diapo 2">Aller à la diapo 2</a>
+                    <a href="#" class="dot" aria-label="Aller à la diapo 3">Aller à la diapo 3</a>
                 </div>
 
                 <!-- Contenu de l'article avec contrôles du carrousel -->
@@ -79,9 +82,9 @@
                     <p>L'État et la CNAF aux côtés des communes pour favoriser (...)</p>
 
                     <!-- Boutons de navigation du carrousel -->
-                    <div class="carousel-controls">
-                        <a href="" class="previous-button">&lt;</a>
-                        <a href="" class="next-button">&gt;</a>
+                    <div class="carousel-controls" aria-label="Les flèches de la navigation du carrousel">
+                        <a href="" class="previous-button" aria-label="Diapositive précédente">&lt;</a>
+                        <a href="" class="next-button" aria-label="Diapositive suivante">&gt;</a>
                     </div>
 
                     <h2>Actualités</h2>
@@ -123,17 +126,17 @@
             <!-- Section Partenaires avec carrousel -->
             <article class="partenaires">
                 <!-- Points de navigation du carrousel des partenaires -->
-                <div class="carousel-dots">
-                    <a href="#" class="dot dot--selected">Aller à la diapo 1</a>
-                    <a href="#" class="dot">Aller à la diapo 2</a>
-                    <a href="#" class="dot">Aller à la diapo 3</a>
+                <div class="carousel-dots" aria-label="Circles de la navigation du carrousel">
+                    <a href="#" class="dot dot--selected" aria-label="Aller à la diapo 1">Aller à la diapo 1</a>
+                    <a href="#" class="dot" aria-label="Aller à la diapo 2">Aller à la diapo 2</a>
+                    <a href="#" class="dot" aria-label="Aller à la diapo 3">Aller à la diapo 3</a>
                 </div>
 
                 <div class="article-content">
                     <!-- Contrôles du carrousel des partenaires -->
-                    <div class="carousel-controls">
-                        <a href="" class="previous-button">&lt;</a>
-                        <a href="" class="next-button">&gt;</a>
+                    <div class="carousel-controls" aria-label="Les flèches de la navigation du carrousel">
+                        <a href="" class="previous-button" aria-label="Diapositive précédente">&lt;</a>
+                        <a href="" class="next-button" aria-label="Diapositive suivante">&gt;</a>
                     </div>
 
                     <h2>Partenaires</h2>
